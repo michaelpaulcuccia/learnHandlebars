@@ -5,9 +5,10 @@ const path = require('path')
 const app = express();
 
 app.engine('handlebars', exphbs({ 
-    defaultLayout: 'main',
-    layoutsDir: path.join(__dirname, 'views/mainLayout')
-    //otherwise will default to a 'layouts' folder
+    defaultLayout: 'main'
+    //ALT Layouts and Partials Folder names
+    //layoutsDir: path.join(__dirname, 'views/anotherFolder')
+    //partialsDir: path.join(__dirname, 'views/anotherFolder')
 }));
 app.set('view engine', 'handlebars');
 
@@ -15,8 +16,8 @@ app.get('/', function (req, res) {
     res.render('home', { title: 'Home'});
 });
 
-app.get('/about', function (req, res) {
-    res.render('about', { 
+app.get('/helpers', function (req, res) {
+    res.render('helpers', { 
         title: 'About', 
         name: 'Michael-Paul Cuccia',
         boolVal: true,

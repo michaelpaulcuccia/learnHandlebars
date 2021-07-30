@@ -1,4 +1,4 @@
-<h1>About!</h1>
+<h1>Helpers!</h1>
 <p>My name is {{name}} and I am a Developer at designory</p>
 
 {{#if boolVal}}
@@ -47,5 +47,15 @@
     <h2>Object 3</h2>
     {{#each data as |value key|}}
         <p>{{@key}}: {{value}}</p>
+    {{/each}}
+</div>
+
+<div>
+    <h2>Array of objects, containing arrays - nested loop</h2>
+    {{#each list}}
+        {{!-- {{log this}} --}}
+        {{#each this.items}}
+            {{this}}
+        {{/each}}
     {{/each}}
 </div>
