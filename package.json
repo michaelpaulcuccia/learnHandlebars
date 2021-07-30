@@ -1,0 +1,24 @@
+{
+  "name": "learnhandlebars",
+  "version": "1.0.0",
+  "description": "Learning Handlebars",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelpaulcuccia/learnHandlebars.git"
+  },
+  "author": "Michael-Paul Cuccia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelpaulcuccia/learnHandlebars/issues"
+  },
+  "homepage": "https://github.com/michaelpaulcuccia/learnHandlebars#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "nodemon": "^2.0.12"
+  }
+}
