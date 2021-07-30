@@ -12,11 +12,32 @@ app.engine('handlebars', exphbs({
 app.set('view engine', 'handlebars');
 
 app.get('/', function (req, res) {
-    res.render('home');
+    res.render('home', { title: 'Home'});
 });
 
 app.get('/about', function (req, res) {
-    res.render('about');
+    res.render('about', { 
+        title: 'About', 
+        name: 'Michael-Paul Cuccia',
+        boolVal: true,
+        otherBoolVal: false,
+        arr: [
+            'react', 
+            'next',
+            'gatsby',
+            'handlebars',
+            'javascript'
+        ],
+        data: {
+            machine: 'MacBook',
+            size: 13,
+            doYouLike: true
+        },
+        list: [
+            {items: ['cat', 'hat', 'bat']},
+            {items: ['car', 'bar', 'far']}
+        ]
+    });
 });
 
 const PORT = 8080;

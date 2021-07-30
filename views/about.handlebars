@@ -1,1 +1,51 @@
 <h1>About!</h1>
+<p>My name is {{name}} and I am a Developer at designory</p>
+
+{{#if boolVal}}
+    <p>Must be true!</p>
+    {{else}}
+    <p>Must be false</p>
+{{/if}}
+
+{{#unless otherBoolVal}}
+    <p>Something is equal to false</p>
+{{/unless}}
+
+<div>
+    <h2>Array 1</h2>
+    {{#each arr}}
+        {{!-- {{this}} --}}
+        {{!-- {{.}} --}}
+        <p>{{this}}</p>
+    {{/each}}
+</div>
+
+<div>
+    <h2>Array 2</h2>
+    {{#each arr as |value key|}}
+        <p>{{key}}: {{value}}</p>
+    {{/each}}
+</div>
+
+<div>
+    <h2>Object 1</h2>
+    {{#each data}}
+        {{!-- {{this}} --}}
+        {{!-- {{.}} --}}
+        <p>{{this}}</p>
+    {{/each}}
+</div>
+
+<div>
+    <h2>Object 2</h2>
+    {{#each data}}
+        <p>{{@key}}</p>
+    {{/each}}
+</div>
+
+<div>
+    <h2>Object 3</h2>
+    {{#each data as |value key|}}
+        <p>{{@key}}: {{value}}</p>
+    {{/each}}
+</div>
