@@ -4,7 +4,10 @@ const path = require("path");
 
 const app = express();
 
+//CSS
 app.use(express.static("public"));
+//Images
+app.use(express.static("views/images")); 
 
 app.engine(
   "handlebars",
