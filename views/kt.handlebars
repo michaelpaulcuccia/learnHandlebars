@@ -1,0 +1,56 @@
+<div class="kt-main-container">
+
+    <div class="title-container">
+        <h1 class="kt-title">{{data.title}}</h1>
+        <h2 class="kt-subTitle">{{data.subTitle}}</h2>
+    </div>
+
+
+    <div class="text-container">
+        
+        <div class="text-container-item">
+            <div class="text-container-item-title">
+                <p>{{data.cancers.ADVANCED_MELANOMA_OR_ADJUVANT_THERAPY_FOR_MELANOMA.title}}</p>
+            </div>
+            <ul class="text-container-item-list">
+                {{#each data.cancers.ADVANCED_MELANOMA_OR_ADJUVANT_THERAPY_FOR_MELANOMA.list}}
+                    <li> {{this}}</li>
+                {{/each}}
+                {{!--  --}}
+                    {{#if ADVANCED_MELANOMA_OR_ADJUVANT_THERAPY_FOR_MELANOMA.subList}}
+                        <ul class="text-container-item-sublist">
+                            {{#each data.cancers.ADVANCED_MELANOMA_OR_ADJUVANT_THERAPY_FOR_MELANOMA.subList}}
+                                <li> {{this}}</li>
+                            {{/each}}
+                        </ul>
+                    {{/if}}
+                {{!--  --}}
+            </ul>
+            
+        </div>
+
+        <div class="text-container-item">
+            <div class="text-container-item-title">
+                <p>{{data.cancers.ADVANCED_NON_SMALL_CELL_LUNG_CANCER.title}}</p>
+            </div>
+            <ul class="text-container-item-list">
+                {{#each data.cancers.ADVANCED_NON_SMALL_CELL_LUNG_CANCER.list}}
+                    <li> {{this}}</li>
+                {{/each}}
+                {{!--  --}}
+                    {{#if data.cancers.ADVANCED_NON_SMALL_CELL_LUNG_CANCER.subList}}
+                        <ul class="text-container-item-list-sublist">
+                            {{#each data.cancers.ADVANCED_NON_SMALL_CELL_LUNG_CANCER.subList}}
+                                <li> {{this}}</li>
+                            {{/each}}
+                        </ul>
+                    {{/if}}
+                {{!--  --}}
+            </ul>
+          
+        </div>
+           
+        
+    </div>
+
+</div>

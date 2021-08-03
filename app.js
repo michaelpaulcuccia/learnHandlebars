@@ -1,6 +1,6 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
-const test = require('./model/views/test.js');
+const ktData = require('./data/ktData.js');
 
 const app = express();
 
@@ -25,8 +25,8 @@ app.get("/test", function (req, res) {
   res.render("test", {title: 'Test'});
 });
 
-app.get("/data", function (req, res) {
-  res.render("data", {title: 'Data', data: test});
+app.get("/kt", function (req, res) {
+  res.render("kt", {title: 'Keytruda', data: ktData});
 });
 
 
