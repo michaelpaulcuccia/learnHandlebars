@@ -1,6 +1,6 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
-const path = require("path");
+const test = require('./model/views/test.js');
 
 const app = express();
 
@@ -20,6 +20,15 @@ app.set("view engine", "handlebars");
 app.get("/", function (req, res) {
   res.render("home", { title: "Home" });
 });
+
+app.get("/test", function (req, res) {
+  res.render("test", {title: 'Test'});
+});
+
+app.get("/data", function (req, res) {
+  res.render("data", {title: 'Data', data: test});
+});
+
 
 app.get("/helpers", function (req, res) {
   res.render("helpers", {
