@@ -90,8 +90,6 @@
 .boxContainer-wrapper {
   height: 500px;
   width: 1400px;
-  margin: 50px auto;
-  background-color: #fff;
 }
 
 @media (max-width: 1400px) {
