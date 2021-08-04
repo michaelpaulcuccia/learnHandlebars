@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,qBAAqB,CAAC;EACpB,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,MAAM;CAMd;;AAJC,MAAM,EAAE,SAAS,EAAE,MAAM;EAJ3B,AAAA,qBAAqB,CAAC;IAKlB,KAAK,EAAE,KAAK;IACZ,MAAM,EAAE,MAAM;GAEjB",
-    "sources": [
-        "../../scss/partials/boxContainer.scss"
-    ],
-    "names": [],
-    "file": "boxContainer.css"
-}
