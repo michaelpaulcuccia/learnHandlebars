@@ -1,71 +1,70 @@
 .main-box-container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  @media (max-width: 1400px) {
+    flex-direction: column;
+  }
+  
+  .box {
+    height: 300px;
+    width: 350px;
+    border: 1px solid rgb(190, 190, 190);
   
     @media (max-width: 1400px) {
-      flex-direction: column;
+      height: 275px;
+      width: 325px;
     }
   
-    .box {
-      height: 300px;
-      width: 350px;
-      border: 1px solid rgb(190, 190, 190);
+    &-content{
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 3fr;
+      height: 100%;
+      width: 100%;
   
-      @media (max-width: 1400px) {
-        height: 275px;
-        width: 325px;
+    &-icon {
+      img {
+        padding-top: 15px;
+        padding-left: 15px;
+      }
+    }
+  
+    &-text {
+      padding-top: 15px;
+      padding-right: 10px;
+  
+      &-headline {
+        font-weight: 600;
+        font-size: 18px;
       }
   
-      &-content{
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 3fr;
-        height: 100%;
-        width: 100%;
+      &-body {
+        font-weight: normal;
+        font-size: 16px;
+        // padding-top: 15px;
+        // padding-right: 10px;
+      }
   
-        &-icon {
-          img {
-            padding-top: 15px;
-            padding-left: 15px;
-          }
+      &-link {
+        // padding-top: 15px;
+        display: flex;
+        align-items: center;
+  
+        a {
+          text-decoration: none;
+          color: indigo;
+          font-size: 14px;
         }
   
-        &-text {
-          padding-top: 15px;
-          padding-right: 10px;
-  
-          &-headline {
-            font-weight: 600;
-            font-size: 18px;
-          }
-  
-          &-body {
-            font-weight: normal;
-            font-size: 16px;
-            // padding-top: 15px;
-            // padding-right: 10px;
-          }
-  
-          &-link {
-            // padding-top: 15px;
-            display: flex;
-            align-items: center;
-  
-            a {
-              text-decoration: none;
-              color: indigo;
-              font-size: 14px;
-            }
-  
-            img {
-              padding-left: 5px;
-            }
-          }
+        img {
+          padding-left: 5px;
         }
-  
       }
     }
   }
+}
+}

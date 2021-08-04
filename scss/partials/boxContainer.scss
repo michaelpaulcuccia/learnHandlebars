@@ -1,9 +1,10 @@
 .boxContainer-wrapper {
-    height: 500px;
-    width: 1400px;
+  height: 500px;
+  width: 1400px;
     
-    @media (max-width: 1400px) {
-      width: 450px;
-      height: 1000px;
-    }
+  @media (max-width: 1400px) {
+    width: 450px;
+    height: 1000px;
+  }
+  
 }
