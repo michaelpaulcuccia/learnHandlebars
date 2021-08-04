@@ -1,0 +1,14 @@
+.boxContainer-wrapper {
+  height: 500px;
+  width: 1400px;
+  margin: 50px auto;
+  background-color: #fff;
+}
+
+@media (max-width: 1400px) {
+  .boxContainer-wrapper {
+    width: 450px;
+    height: 1000px;
+  }
+}
+/*# sourceMappingURL=boxContainer.css.map */

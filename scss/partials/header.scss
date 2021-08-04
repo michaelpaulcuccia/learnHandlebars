@@ -1,0 +1,33 @@
+.header-nav {
+    height: 100px;
+    width: 100%;
+    background: #eaafc8;
+    background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);
+    background: linear-gradient(to right, #eaafc8, #654ea3);
+    color: #fff;
+    display: flex;
+    align-items: center;
+  
+    h2 {
+      padding: 5px 25px;
+    }
+  
+    .header-ul {
+      display: flex;
+      margin-left: auto;
+      list-style-type: none;
+  
+      li {
+        padding: 5px 10px;
+  
+        &:nth-child(3){
+          padding-right: 25px;
+        }
+  
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+    }
+  }

@@ -1,93 +1,3 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  background: #eaafc8;
-  background: -webkit-gradient(linear, left top, right top, from(#eaafc8), to(#654ea3));
-  background: linear-gradient(to right, #eaafc8, #654ea3);
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  line-height: 1.4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0 auto;
-  max-width: 1800px;
-}
-
-@media (max-width: 1400px) {
-  body {
-    width: 750px;
-  }
-}
-
-.home-headline-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.home-headline-container h1 {
-  padding-top: 50px;
-  color: #fff;
-}
-
-.header-nav {
-  height: 100px;
-  width: 100%;
-  background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header-nav h2 {
-  padding: 5px 25px;
-}
-
-.header-nav .header-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  list-style-type: none;
-}
-
-.header-nav .header-ul li {
-  padding: 5px 10px;
-}
-
-.header-nav .header-ul li:nth-child(3) {
-  padding-right: 25px;
-}
-
-.boxContainer-wrapper {
-  height: 500px;
-  width: 1400px;
-  margin: 50px auto;
-  background-color: #fff;
-}
-
-@media (max-width: 1400px) {
-  .boxContainer-wrapper {
-    width: 450px;
-    height: 1000px;
-  }
-}
-
 .main-box-container {
   height: 100%;
   width: 100%;
@@ -177,10 +87,106 @@ body {
   padding-left: 5px;
 }
 
+.boxContainer-wrapper {
+  height: 500px;
+  width: 1400px;
+  margin: 50px auto;
+  background-color: #fff;
+}
+
+@media (max-width: 1400px) {
+  .boxContainer-wrapper {
+    width: 450px;
+    height: 1000px;
+  }
+}
+
+.header-nav {
+  height: 100px;
+  width: 100%;
+  background: #eaafc8;
+  background: -webkit-gradient(linear, left top, right top, from(#eaafc8), to(#654ea3));
+  background: linear-gradient(to right, #eaafc8, #654ea3);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-nav h2 {
+  padding: 5px 25px;
+}
+
+.header-nav .header-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  list-style-type: none;
+}
+
+.header-nav .header-ul li {
+  padding: 5px 10px;
+}
+
+.header-nav .header-ul li:nth-child(3) {
+  padding-right: 25px;
+}
+
+.header-nav .header-ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  line-height: 1.4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  max-width: 1800px;
+}
+
+@media (max-width: 1400px) {
+  body {
+    width: 750px;
+  }
+}
+
+.home-headline-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home-headline-container h1 {
+  padding-top: 50px;
+  color: #000000;
+}
+
 .kt-main-container .title-container {
   width: 100%;
   height: 10vh;
   padding-left: 25px;
+  background: linear-gradient(120deg, #2c6d3c, #48a446);
 }
 
 .kt-main-container .title-container .kt-title {
@@ -225,7 +231,7 @@ body {
 
 .kt-main-container .text-container-item-list li::before {
   content: "\2212";
-  color: gold;
+  color: #48a446;
 }
 
 .kt-main-container .text-container-item-list-sublist li {
@@ -234,6 +240,6 @@ body {
 
 .kt-main-container .text-container-item-list-sublist li::before {
   content: "\2022";
-  color: gold;
+  color: #2c6d3c;
 }
 /*# sourceMappingURL=main.css.map */

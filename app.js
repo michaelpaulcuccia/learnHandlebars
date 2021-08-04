@@ -25,8 +25,8 @@ app.get("/test", function (req, res) {
   res.render("test", {title: 'Test'});
 });
 
-app.get("/kt", function (req, res) {
-  res.render("kt", {title: 'Keytruda', data: ktData});
+app.get("/safety", function (req, res) {
+  res.render("safety", {title: 'Keytruda', data: ktData});
 });
 
 
