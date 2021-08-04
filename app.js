@@ -21,14 +21,23 @@ app.get("/", function (req, res) {
   res.render("home", { title: "Home" });
 });
 
+app.get("/dosing", function (req, res) {
+  res.render("dosing", {title: 'Dosing', data: ktData});
+});
+
+app.get("/efficacy", function (req, res) {
+  res.render("efficacy", {title: 'Efficacy', data: ktData});
+});
+
 app.get("/test", function (req, res) {
   res.render("test", {title: 'Test'});
 });
 
-app.get("/safety", function (req, res) {
-  res.render("safety", {title: 'Keytruda', data: ktData});
-});
+//TESTING ROUTES
 
+app.get("/safety", function (req, res) {
+  res.render("safety", {title: 'Safety', data: ktData});
+});
 
 app.get("/helpers", function (req, res) {
   res.render("helpers", {
