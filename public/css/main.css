@@ -224,4 +224,33 @@ body {
 .main-box-container .box-content-text-link img {
   padding-left: 5px;
 }
+
+.callout-wrapper {
+  margin: 25px auto;
+}
+
+.callout-wrapper .callout-container {
+  height: 150px;
+  width: 900px;
+  border: 1px solid green;
+  border-radius: 8px;
+  -webkit-box-shadow: 5px 5px #36864a, 10px 10px #006ead;
+          box-shadow: 5px 5px #36864a, 10px 10px #006ead;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.callout-wrapper .callout-container-icon {
+  padding-right: 25px;
+}
+
+.callout-wrapper .callout-container-text {
+  font-weight: 400;
+  font-size: 20px;
+}
 /*# sourceMappingURL=main.css.map */
