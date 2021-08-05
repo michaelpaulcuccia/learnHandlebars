@@ -245,3 +245,100 @@ body {
   }
 
 }
+
+//PARTIAL - ACCORDION
+.accordion-wrapper {
+  margin: 15px auto;
+
+  //hides checkbox
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  .row {
+    display:flex;
+    .col {
+      flex:1;
+    }
+  }
+
+  .tabs {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .tab {
+    width: 900px;
+    border-radius: 8px;
+    color: #000000;
+    overflow: hidden;
+
+    &-label {
+      display: flex;
+      justify-content: space-between;
+      padding: 1em;
+      border: 1px solid #000000;
+      background: #fff;
+      font-weight: bold;
+      cursor: pointer;
+
+      /* Icon */
+      &:hover {
+        background: darken(#fff, 20%);
+      }
+
+      &::after {
+        content: "\276F";
+        width: 1em;
+        height: 1em;
+        text-align: center;
+        transition: all .35s;
+      }
+
+    }
+
+    &-content {
+      max-height: 0;
+      padding: 0 1em;
+      color: #000000;
+      background: white;
+      transition: all .35s;
+    }
+
+    &-close {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1em;
+      font-size: 0.75em;
+      background: #fff;
+      cursor: pointer;
+
+      &:hover {
+        background: darken(#fff, 20%);
+      }
+
+    }
+
+  }
+
+  // :checked
+  input:checked {
+  + .tab-label {
+    background: darken(#fff, 20%);
+    border: 1px solid #000000;
+      &::after {
+      transform: rotate(90deg);
+    }
+  }
+  
+  ~ .tab-content {
+    max-height: 100vh;
+    padding: 1em;
+  }
+
+}
+
+}
+

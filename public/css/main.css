@@ -253,4 +253,107 @@ body {
   font-weight: 400;
   font-size: 20px;
 }
+
+.accordion-wrapper {
+  margin: 15px auto;
+}
+
+.accordion-wrapper input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.accordion-wrapper .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.accordion-wrapper .row .col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.accordion-wrapper .tabs {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-wrapper .tab {
+  width: 900px;
+  border-radius: 8px;
+  color: #000000;
+  overflow: hidden;
+}
+
+.accordion-wrapper .tab-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+  border: 1px solid #000000;
+  background: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  /* Icon */
+}
+
+.accordion-wrapper .tab-label:hover {
+  background: #cccccc;
+}
+
+.accordion-wrapper .tab-label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.accordion-wrapper .tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #000000;
+  background: white;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.accordion-wrapper .tab-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #fff;
+  cursor: pointer;
+}
+
+.accordion-wrapper .tab-close:hover {
+  background: #cccccc;
+}
+
+.accordion-wrapper input:checked + .tab-label {
+  background: #cccccc;
+  border: 1px solid #000000;
+}
+
+.accordion-wrapper input:checked + .tab-label::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.accordion-wrapper input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
 /*# sourceMappingURL=main.css.map */
