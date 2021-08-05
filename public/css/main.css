@@ -277,13 +277,11 @@ body {
 }
 
 .accordion-wrapper .tabs {
-  border-radius: 8px;
   overflow: hidden;
 }
 
 .accordion-wrapper .tab {
   width: 900px;
-  border-radius: 8px;
   color: #000000;
   overflow: hidden;
 }
