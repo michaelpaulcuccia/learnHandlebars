@@ -1,24 +1,18 @@
+@charset "UTF-8";
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.4;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 0 auto;
   max-width: 1800px;
 }
-
 @media (max-width: 1400px) {
   body {
     width: 750px;
@@ -26,14 +20,9 @@ body {
 }
 
 .home-headline-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .home-headline-container h1 {
   padding-top: 50px;
   color: black;
@@ -45,57 +34,45 @@ body {
   padding-left: 25px;
   background: linear-gradient(120deg, #2c6d3c, #48a446);
 }
-
 .kt-main-container .title-container .kt-title {
   color: #fff;
   font-size: 50px;
 }
-
 .kt-main-container .title-container .kt-subTitle {
   color: #fff;
   font-size: 26px;
 }
-
 .kt-main-container .text-container {
   width: 100%;
   padding: 30px;
   background-color: #fff;
   color: #000000;
 }
-
 .kt-main-container .text-container-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 50px;
 }
-
 .kt-main-container .text-container-item-title {
   width: 300px;
   font-weight: 500;
   padding-right: 50px;
 }
-
 .kt-main-container .text-container-item-list {
   width: 900px;
 }
-
 .kt-main-container .text-container-item-list li {
   list-style-type: none;
   padding-bottom: 10px;
 }
-
 .kt-main-container .text-container-item-list li::before {
-  content: "\2212";
+  content: "−";
   color: #48a446;
 }
-
 .kt-main-container .text-container-item-list-sublist li {
   padding-left: 15px;
 }
-
 .kt-main-container .text-container-item-list-sublist li::before {
-  content: "\2022";
+  content: "•";
   color: #2c6d3c;
 }
 
@@ -104,39 +81,27 @@ body {
   width: 100%;
   background: linear-gradient(120deg, #2c6d3c, #48a446);
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .header-nav h2 {
   padding: 5px 25px;
 }
-
 .header-nav h2 a {
   text-decoration: none;
   color: #fff;
 }
-
 .header-nav .header-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: auto;
   list-style-type: none;
 }
-
 .header-nav .header-ul li {
   padding: 5px 10px;
 }
-
 .header-nav .header-ul li:nth-child(3) {
   padding-right: 25px;
 }
-
 .header-nav .header-ul li a {
   text-decoration: none;
   color: #fff;
@@ -144,83 +109,57 @@ body {
 
 .main-box-container {
   padding-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
 @media (max-width: 1400px) {
   .main-box-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 .main-box-container .box {
   height: 280px;
   width: 317px;
   padding: 20px 10px 10px 10px;
   border: 1px solid #bebebe;
 }
-
 @media (max-width: 1400px) {
   .main-box-container .box {
     height: 275px;
     width: 325px;
   }
 }
-
 .main-box-container .box-content {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  -ms-grid-columns: 1fr 3fr;
-      grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 3fr;
   height: 100%;
   width: 100%;
 }
-
 .main-box-container .box-content-icon img {
   padding-left: 5px;
 }
-
 .main-box-container .box-content-text-headline {
   font-weight: 600;
   font-size: 18px;
 }
-
 .main-box-container .box-content-text-body {
   font-weight: 300;
   font-size: 16px;
   padding-top: 15px;
   padding-right: 10px;
 }
-
 .main-box-container .box-content-text-link {
   padding-top: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .main-box-container .box-content-text-link a {
   text-decoration: none;
   color: indigo;
   font-size: 14px;
 }
-
 .main-box-container .box-content-text-link img {
   padding-left: 5px;
 }
@@ -228,38 +167,28 @@ body {
 .callout-wrapper {
   margin: 25px auto;
 }
-
 .callout-wrapper .callout-container {
   height: 150px;
   width: 900px;
   border: 1px solid green;
   border-radius: 8px;
-  -webkit-box-shadow: 5px 5px #36864a, 10px 10px #006ead;
-          box-shadow: 5px 5px #36864a, 10px 10px #006ead;
+  box-shadow: 5px 5px #36864a, 10px 10px #006ead;
   padding: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 @media (max-width: 1400px) {
   .callout-wrapper .callout-container {
     width: 600px;
   }
 }
-
 .callout-wrapper .callout-container-icon {
   padding-right: 25px;
 }
-
 .callout-wrapper .callout-container-text {
   font-weight: 400;
   font-size: 20px;
 }
-
 @media (max-width: 1400px) {
   .callout-wrapper .callout-container-text {
     font-size: 16px;
@@ -269,45 +198,32 @@ body {
 .accordion-wrapper {
   margin: 15px auto;
 }
-
 .accordion-wrapper input {
   position: absolute;
   opacity: 0;
   z-index: -1;
 }
-
 .accordion-wrapper .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 5px;
 }
-
 .accordion-wrapper .row .col {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
-
 .accordion-wrapper .tabs {
   overflow: hidden;
 }
-
 .accordion-wrapper .tab {
   width: 900px;
   color: #000000;
   overflow: hidden;
 }
-
 @media (max-width: 1400px) {
   .accordion-wrapper .tab {
     width: 600px;
   }
 }
-
 .accordion-wrapper .tab-label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 1em;
   border: 1px solid #000000;
@@ -315,81 +231,56 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
-
 .accordion-wrapper .tab-label-headlines {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .accordion-wrapper .tab-label-headlines p {
   padding-left: 20px;
 }
-
 .accordion-wrapper .tab-label-headlines p:first-of-type {
   font-weight: 600;
 }
-
 .accordion-wrapper .tab-label-headlines p:nth-of-type(2) {
   font-size: 14px;
   font-weight: 300;
 }
-
 .accordion-wrapper .tab-label::before {
   content: "+";
   font-size: 32px;
   color: #9288e8;
 }
-
 .accordion-wrapper .tab-label:hover {
   background: #f2f2f2;
 }
-
 .accordion-wrapper .tab-content {
   max-height: 0;
   padding: 0 1em;
   color: #000000;
   background: white;
-  -webkit-transition: all .35s;
-  transition: all .35s;
+  transition: all 0.35s;
 }
-
 .accordion-wrapper .tab-content-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .accordion-wrapper .tab-content-container h4 {
   font-weight: 600;
   padding-bottom: 5px;
 }
-
 .accordion-wrapper .tab-content-container p {
   font-weight: 300;
 }
-
 .accordion-wrapper input:checked + .tab-label {
   background: #f2f2f2;
   border: 1px solid #000000;
 }
-
 .accordion-wrapper input:checked + .tab-label::before {
   content: "-";
   font-size: 32px;
   color: #9288e8;
 }
-
 .accordion-wrapper input:checked ~ .tab-content {
   max-height: 100vh;
   padding: 1em;
 }
-/*# sourceMappingURL=main.css.map */
