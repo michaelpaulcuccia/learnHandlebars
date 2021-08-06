@@ -316,12 +316,33 @@ body {
   cursor: pointer;
 }
 
-.accordion-wrapper .tab-label p {
+.accordion-wrapper .tab-label-headlines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.accordion-wrapper .tab-label-headlines p {
   padding-left: 20px;
 }
 
+.accordion-wrapper .tab-label-headlines p:first-of-type {
+  font-weight: 600;
+}
+
+.accordion-wrapper .tab-label-headlines p:nth-of-type(2) {
+  font-size: 14px;
+  font-weight: 300;
+}
+
 .accordion-wrapper .tab-label::before {
-  content: "\2795";
+  content: "+";
+  font-size: 32px;
+  color: #9288e8;
 }
 
 .accordion-wrapper .tab-label:hover {
@@ -337,13 +358,34 @@ body {
   transition: all .35s;
 }
 
+.accordion-wrapper .tab-content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.accordion-wrapper .tab-content-container h4 {
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.accordion-wrapper .tab-content-container p {
+  font-weight: 300;
+}
+
 .accordion-wrapper input:checked + .tab-label {
   background: #f2f2f2;
   border: 1px solid #000000;
 }
 
 .accordion-wrapper input:checked + .tab-label::before {
-  content: "\2796";
+  content: "-";
+  font-size: 32px;
+  color: #9288e8;
 }
 
 .accordion-wrapper input:checked ~ .tab-content {

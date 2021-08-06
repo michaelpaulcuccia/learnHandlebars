@@ -294,12 +294,29 @@ body {
       font-weight: bold;
       cursor: pointer;
 
-      p {
-        padding-left: 20px;
+      &-headlines {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          padding-left: 20px;
+        }
+
+        p:first-of-type {
+          font-weight: 600;
+        }
+
+        p:nth-of-type(2) {
+          font-size: 14px;
+          font-weight: 300;
+        }
       }
 
       &::before {
-        content: "\2795";
+        //content: "\2795";
+        content: "+";
+        font-size: 32px;
+        color: #9288e8;
       }
 
       &:hover {
@@ -314,6 +331,20 @@ body {
       color: #000000;
       background: white;
       transition: all .35s;
+      
+      &-container {
+        display: flex;
+        flex-direction: column;
+
+        h4 {
+          font-weight: 600;
+          padding-bottom: 5px;
+        }
+
+        p {
+          font-weight: 300;
+        }
+      }
     }
 
   }
@@ -325,7 +356,10 @@ body {
     border: 1px solid #000000;
 
     &::before {
-      content: "\2796";
+      //content: "\2796";
+      content: "-";
+      font-size: 32px;
+      color: #9288e8;
     }
       
   }
