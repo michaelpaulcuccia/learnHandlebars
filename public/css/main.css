@@ -291,12 +291,26 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 1400px) {
+  .doseCard-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .doseCard-container .doseCard-item {
-  height: 275px;
-  width: 300px;
+  height: 225px;
+  width: 350px;
   border: 1px solid #bebebe;
   border-radius: 8px;
   position: relative;
+}
+@media (max-width: 1400px) {
+  .doseCard-container .doseCard-item:nth-child(2) {
+    margin-top: 50px;
+  }
+  .doseCard-container .doseCard-item:nth-child(3) {
+    margin-top: 50px;
+  }
 }
 .doseCard-container .doseCard-item .icon-container {
   height: 90px;
@@ -306,18 +320,29 @@ body {
   background-color: #fff;
   position: absolute;
   top: -45px;
-  left: 105px;
+  left: 135px;
+  display: flex;
+  justify-content: center;
+}
+.doseCard-container .doseCard-item .icon-container img {
+  height: 46px;
+  width: 46px;
+  margin-top: 15px;
 }
 .doseCard-container .doseCard-item .content-container {
   padding-top: 55px;
   padding-left: 10px;
+  padding-right: 10px;
 }
 .doseCard-container .doseCard-item .content-container-option {
   font-size: 14px;
+  font-weight: 500;
 }
 .doseCard-container .doseCard-item .content-container-dose {
   font-size: 12px;
+  padding-top: 10px;
 }
 .doseCard-container .doseCard-item .content-container-notes {
   font-size: 12px;
+  padding-top: 5px;
 }
