@@ -1,6 +1,7 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
 const ktData = require('./data/ktData.js');
+const doseCardData = require('./data/dosingCard.js');
 
 const app = express();
 
@@ -22,21 +23,21 @@ app.get("/", function (req, res) {
 });
 
 app.get("/dosing", function (req, res) {
-  res.render("dosing", {title: 'Dosing', data: ktData});
+  res.render("dosing", {title: 'Dosing', data: doseCardData});
 });
 
 app.get("/efficacy", function (req, res) {
-  res.render("efficacy", {title: 'Efficacy', data: ktData});
+  res.render("efficacy", {title: 'Efficacy'});
 });
 
-app.get("/test", function (req, res) {
-  res.render("test", {title: 'Test'});
+app.get("/safety", function (req, res) {
+  res.render("safety", {title: 'Safety', data: ktData});
 });
 
 //TESTING ROUTES
 
-app.get("/safety", function (req, res) {
-  res.render("safety", {title: 'Safety', data: ktData});
+app.get("/test", function (req, res) {
+  res.render("test", {title: 'Test'});
 });
 
 app.get("/helpers", function (req, res) {

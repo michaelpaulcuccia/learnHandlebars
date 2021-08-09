@@ -25,7 +25,6 @@ body {
 
   h1 {
     padding-top: 50px;
-    //color: green;
     color: black;
   }
 }
@@ -374,3 +373,49 @@ body {
 
 }
 
+//PARTIALS - doseCard
+.doseCard-container {
+
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-evenly;
+
+  .doseCard-item {
+    height: 275px;
+    width: 300px;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 8px;
+    position: relative;
+  
+    .icon-container {
+      height: 90px;
+      width: 90px;
+      border-radius: 50px;
+      border: 1px solid rgb(190, 190, 190);
+      background-color: #fff;
+      position: absolute;
+      top: -45px;
+      left: 105px;
+    }
+
+    .content-container {
+      padding-top: 55px;
+      padding-left: 10px;
+
+      &-option {
+        font-size: 14px;
+      }
+
+      &-dose {
+        font-size: 12px;
+      }
+
+      &-notes {
+        font-size: 12px;
+      }
+    }
+
+  }
+
+}

@@ -284,3 +284,40 @@ body {
   max-height: 100vh;
   padding: 1em;
 }
+
+.doseCard-container {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.doseCard-container .doseCard-item {
+  height: 275px;
+  width: 300px;
+  border: 1px solid #bebebe;
+  border-radius: 8px;
+  position: relative;
+}
+.doseCard-container .doseCard-item .icon-container {
+  height: 90px;
+  width: 90px;
+  border-radius: 50px;
+  border: 1px solid #bebebe;
+  background-color: #fff;
+  position: absolute;
+  top: -45px;
+  left: 105px;
+}
+.doseCard-container .doseCard-item .content-container {
+  padding-top: 55px;
+  padding-left: 10px;
+}
+.doseCard-container .doseCard-item .content-container-option {
+  font-size: 14px;
+}
+.doseCard-container .doseCard-item .content-container-dose {
+  font-size: 12px;
+}
+.doseCard-container .doseCard-item .content-container-notes {
+  font-size: 12px;
+}

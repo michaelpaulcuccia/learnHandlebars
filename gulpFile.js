@@ -18,15 +18,11 @@ function style() {
 function watch() {
 
     // browserSync.init({
-    //     server: {
-    //         baseDir: './'
-    //     }
     // });
 
     //when anything changes, call style()
     gulp.watch('./scss/**/*.scss', style);
-    //changes to hbs files, refresh
-    gulp.watch('./views/**/*.handlebars').on('change', browserSync.reload)
+
 }
 
 exports.style = style;
