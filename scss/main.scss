@@ -1,3 +1,5 @@
+@use './partials/_header.scss';
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -102,46 +104,46 @@ body {
 }
 
 //PARTIALS - HEADER
-.header-nav {
-  height: 100px;
-  width: 100%;
-  background: linear-gradient(120deg, rgb(44, 109, 60), rgb(72, 164, 70));
-  color: #fff;
-  display: flex;
-  align-items: center;
+// .header-nav {
+//   height: 100px;
+//   width: 100%;
+//   background: linear-gradient(120deg, rgb(44, 109, 60), rgb(72, 164, 70));
+//   color: #fff;
+//   display: flex;
+//   align-items: center;
     
-  h2 {
-    padding: 5px 25px;
+//   h2 {
+//     padding: 5px 25px;
 
-    a {
-      text-decoration: none;
-      color: #fff;
-    }
+//     a {
+//       text-decoration: none;
+//       color: #fff;
+//     }
     
-  }
+//   }
     
-  .header-ul {
-    display: flex;
-    margin-left: auto;
-    list-style-type: none;
+//   .header-ul {
+//     display: flex;
+//     margin-left: auto;
+//     list-style-type: none;
     
-    li {
-      padding: 5px 10px;
+//     li {
+//       padding: 5px 10px;
     
-      &:nth-child(3){
-        padding-right: 25px;
-      }
+//       &:nth-child(3){
+//         padding-right: 25px;
+//       }
     
-      a {
-        text-decoration: none;
-        color: #fff;
-      }
+//       a {
+//         text-decoration: none;
+//         color: #fff;
+//       }
 
-    }
+//     }
     
-  }
+//   }
     
-}
+// }
 
 //PARTIALS - BOX
 .main-box-container {
