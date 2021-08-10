@@ -30,26 +30,6 @@
   color: #fff;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  line-height: 1.4;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  max-width: 1800px;
-}
-@media (max-width: 1400px) {
-  body {
-    width: 750px;
-  }
-}
-
 .home-headline-container {
   display: flex;
   justify-content: center;
@@ -345,4 +325,24 @@ body {
 .doseCard-container .doseCard-item .content-container-notes {
   font-size: 12px;
   padding-top: 5px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1800px;
+}
+@media (max-width: 1400px) {
+  body {
+    width: 750px;
+  }
 }

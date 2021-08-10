@@ -1,0 +1,117 @@
+.accordion-wrapper {
+    margin: 15px auto;
+  
+    //hides checkbox
+    input {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+    }
+  
+    .row {
+      display:flex;
+      padding: 5px;
+      .col {
+        flex:1;
+      }
+    }
+  
+    .tabs {
+      overflow: hidden;
+    }
+    
+    .tab {
+      width: 900px;
+      color: #000000;
+      overflow: hidden;
+  
+      @media (max-width: 1400px) {
+        width: 600px;
+      }
+  
+      &-label {
+        display: flex;
+        padding: 1em;
+        border: 1px solid #000000;
+        background: #fff;
+        font-weight: bold;
+        cursor: pointer;
+  
+        &-headlines {
+          display: flex;
+          flex-direction: column;
+  
+          p {
+            padding-left: 20px;
+          }
+  
+          p:first-of-type {
+            font-weight: 600;
+          }
+  
+          p:nth-of-type(2) {
+            font-size: 14px;
+            font-weight: 300;
+          }
+        }
+  
+        &::before {
+          //content: "\2795";
+          content: "+";
+          font-size: 32px;
+          color: #9288e8;
+        }
+  
+        &:hover {
+          background: darken(#fff, 5%);
+        }
+  
+      }
+  
+      &-content {
+        max-height: 0;
+        padding: 0 1em;
+        color: #000000;
+        background: white;
+        transition: all .35s;
+        
+        &-container {
+          display: flex;
+          flex-direction: column;
+  
+          h4 {
+            font-weight: 600;
+            padding-bottom: 5px;
+          }
+  
+          p {
+            font-weight: 300;
+          }
+        }
+      }
+  
+    }
+  
+    // :checked
+    input:checked {
+    + .tab-label {
+      background: darken(#fff, 5%);
+      border: 1px solid #000000;
+  
+      &::before {
+        //content: "\2796";
+        content: "-";
+        font-size: 32px;
+        color: #9288e8;
+      }
+        
+    }
+    
+    ~ .tab-content {
+      max-height: 100vh;
+      padding: 1em;
+    }
+  
+  }
+  
+}

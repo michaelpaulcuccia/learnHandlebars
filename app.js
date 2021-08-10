@@ -7,6 +7,7 @@ const app = express();
 
 //CSS
 app.use(express.static("public"));
+
 //Images
 app.use(express.static("views/images")); 
 
@@ -16,6 +17,7 @@ app.engine(
     defaultLayout: "main",
   })
 );
+
 app.set("view engine", "handlebars");
 
 app.get("/", function (req, res) {
@@ -35,10 +37,6 @@ app.get("/safety", function (req, res) {
 });
 
 //TESTING ROUTES
-
-app.get("/test", function (req, res) {
-  res.render("test", {title: 'Test'});
-});
 
 app.get("/helpers", function (req, res) {
   res.render("helpers", {

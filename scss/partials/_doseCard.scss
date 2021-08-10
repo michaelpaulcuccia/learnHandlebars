@@ -1,0 +1,73 @@
+.doseCard-container {
+
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-evenly;
+  
+    @media (max-width: 1400px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .doseCard-item {
+      height: 225px;
+      width: 350px;
+      border: 1px solid rgb(190, 190, 190);
+      border-radius: 8px;
+      position: relative;
+  
+      @media (max-width: 1400px) {
+        &:nth-child(2) {
+          margin-top: 50px;
+        }
+        &:nth-child(3) {
+          margin-top: 50px;
+        }
+        
+      }
+    
+      .icon-container {
+        height: 90px;
+        width: 90px;
+        border-radius: 50px;
+        border: 1px solid rgb(190, 190, 190);
+        background-color: #fff;
+        position: absolute;
+        top: -45px;
+        left: 135px;
+        display: flex;
+        justify-content: center; 
+  
+        img {
+          height: 46px;
+          width: 46px;
+          margin-top: 15px;
+          // padding-top: px;
+        }
+      }
+  
+      .content-container {
+        padding-top: 55px;
+        padding-left: 10px;
+        padding-right: 10px;
+  
+        &-option {
+          font-size: 14px;
+          font-weight: 500;
+        }
+  
+        &-dose {
+          font-size: 12px;
+          padding-top: 10px;
+        }
+  
+        &-notes {
+          font-size: 12px;
+          padding-top: 5px;
+        }
+      }
+  
+    }
+  
+}
